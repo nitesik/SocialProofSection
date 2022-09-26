@@ -195,7 +195,7 @@
   .lower {
     display: flex;
     flex-direction: column;
-    background-color: red;
+    background-color: green;
   }
   
 }
