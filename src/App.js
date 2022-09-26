@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home';
+import desktopBackground from "./components/images/bg-pattern-bottom-desktop.svg";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home />
+
+      <style>{`
+        .App {
+          background-image: url(${desktopBackground});
+          background-size: contain;
+          background-position: 800px;
+          background-repeat: no-repeat;
+        }
+      `}</style>
     </div>
   );
 }
